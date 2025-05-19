@@ -24,3 +24,7 @@ than the geometric mean. These arithmetic mean values represent the percentage
 of the target pairing mode for each sequence.
 
 To avoid numerical underflow during the calculation of the geometric mean, each value was multiplied by 100 before computing the product. This step was taken not just to avoid very small numbers, but to prevent the result from becoming smaller than what the computer can accurately represent using floating-point arithmetic. When multiplying many small values, the result can become so close to zero that it is rounded to zero by the computer, leading to inaccurate or undefined results. Scaling the values helps maintain numerical stability and ensures reliable computation.
+
+A fórmula da média aritmética dos valores armazenados no vetor `codon` é dada por:
+
+![Média](https://latex.codecogs.com/png.image?\dpi{150} \frac{1}{n} \sum_{i=1}^{n} \mathrm{codon}_i)
