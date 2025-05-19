@@ -27,4 +27,4 @@ To avoid numerical underflow during the calculation of the geometric mean, each 
 
 A fórmula da média aritmética dos valores armazenados no vetor `codon` é dada por:
 
-![Média](https://latex.codecogs.com/png.image?\dpi{150} \frac{1}{n} \sum_{i=1}^{n} \mathrm{codon}_i)
+![Média]("https://latex.codecogs.com/png.image?\dpi{150} \frac{1}{n} \sum_{i=1}^{n} \mathrm{codon}_i")
