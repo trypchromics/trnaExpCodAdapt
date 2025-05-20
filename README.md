@@ -19,6 +19,8 @@ To avoid numerical underflow during the calculation of the geometric mean, each 
 
 <img src="mediaGeometricaAdaptada.png" alt="Geometric average formula." height="150"/>
 
+<img src="./mediaAritmetica.png" alt="Arithmetic average formula." height="150"/>
+
 To calculate the percentage of target
 anticodon:codon pairing modes, we used
 a table containing all the same 62 codon triplets. For each codon corresponding
@@ -30,5 +32,3 @@ than the geometric mean. These arithmetic mean values represent the percentage
 of the target pairing mode for each sequence.
 
 A fórmula da média aritmética dos valores armazenados no vetor `codon` é dada por:
-
-<img src="mediaAritmetica.png" alt="Arithmetic average formula." height="150"/>
