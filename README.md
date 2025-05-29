@@ -1,7 +1,8 @@
 # trnaExpCodAdapt
 tRNA Expression-Codon Adaptation
 
-# GM-tECA and percentage of anticodon:codon base paring
+
+## GM-tECA and percentage of anticodon:codon base paring
 
 The **GM-tECA** (Geometric Mean of tRNA Expression Adaptation) is calculated using the following formula, which represents the geometric mean of the tRNA abundances that decode each codon in a coding sequence (CDS):
 
@@ -9,7 +10,13 @@ The **GM-tECA** (Geometric Mean of tRNA Expression Adaptation) is calculated u
 
 where:
 * **n:** Total number of codons in the CDS.
-* **i:** tRNA abundance that pair with their corresponding codons
+* **codons:** Vector of length *n* indexed by codon sequences. Each item contains the tRNA abundance that pairs with the corresponding codon.
+* **i:** Index in the vector *codons*.
+
+**Higher GM-tECA values** indicate that the CDS is enriched in codons recognized by the most abundant tRNAs. **Lower GM-tECA values** imply the opposite.
+
+
+## GM-tECA calculation protocol
 
 The GM-tECA and percentage of  anticodon:codon
 base pairing values were obtained using the python script available in https://github.com/trypchromics/trnaExpCodAdapt.
