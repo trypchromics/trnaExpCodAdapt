@@ -6,7 +6,7 @@ tRNA Expression-Codon Adaptation
 
 The **GM-tECA** (Geometric Mean of tRNA Expression Adaptation) is calculated using the following formula, which represents the geometric mean of the tRNA abundances that decode each codon in a coding sequence (CDS):
 
-<img src="mediaGeometricaAdaptada.png" alt="Geometric average formula." height="150"/>
+<img src="images/mediaGeometricaAdaptada.png" alt="Geometric average formula." height="150"/>
 
 where:
 * **n:** Total number of codons in the CDS.
@@ -37,7 +37,7 @@ To execute the scripts, run GM-tECA.bash and GM-tECA.R from directory geometricM
 
 To calculate the **percentage of target anticodon:codon pairing modes**, we employ the following formula: 
 
-<img src="./images/mediaAritmetica.png" alt="Arithmetic average formula." height="150"/>
+<img src="images/mediaAritmetica.png" alt="Arithmetic average formula." height="150"/>
 
 where:
 * **n:** Total number of codons in the CDS.
