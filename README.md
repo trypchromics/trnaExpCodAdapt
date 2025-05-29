@@ -18,6 +18,12 @@ where:
 
 ## GM-tECA calculation protocol
 
+### Requirements
+
+Input files:
+* **FASTA file:** Contains target coding sequences (CDSs) (e.g., Dm28c_CDSs.fasta). Format: standard FASTA with headers (e.g., ">geneID").
+* **tRNA abundance data:** Derived from tRNA-seq experiments. File: tRNA abundance (tab-delimited, text format) (e.g., codon_tRNA_abundance.txt). Contains tRNA abundances that pair with their corresponding codons.
+
 The GM-tECA and percentage of  anticodon:codon
 base pairing values were obtained using the python script available in https://github.com/trypchromics/trnaExpCodAdapt.
 First, the sapply function in R 4.3.1 was used to map each codon from
