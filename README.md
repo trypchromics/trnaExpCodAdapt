@@ -2,7 +2,7 @@
 tRNA Expression-Codon Adaptation
 
 
-## GM-tECA and percentage of anticodon:codon base paring
+## GM-tECA
 
 The **GM-tECA** (Geometric Mean of tRNA Expression Adaptation) is calculated using the following formula, which represents the geometric mean of the tRNA abundances that decode each codon in a coding sequence (CDS):
 
@@ -24,6 +24,22 @@ Input files:
 * **FASTA file:** Contains target coding sequences (CDSs) (e.g., Dm28c_CDSs.fasta). Format: standard FASTA with headers (e.g., ">geneID").
 * **tRNA abundance data:** Derived from tRNA-seq experiments. File: tRNA abundance (tab-delimited, text format) (e.g., codon_tRNA_abundance.txt). Contains tRNA abundances that pair with their corresponding codons.
 
+
+### Execution
+
+To execute the scripts, run GM-tECA.bash and GM-tECA.R from directory geometricMean.
+
+
+## Percentage of anticodon:codon base paring
+
+To calculate the **percentage of target anticodon:codon pairing modes**, we employ the following formula: 
+
+<img src="./mediaAritmetica.png" alt="Arithmetic average formula." height="150"/>
+
+where:
+* **n:** Total number of codons in the CDS.
+    • i: Codon matches the target anticodon:codon pairing mode, it was employed the value 1. All remaining codons, which were not targets of this pairing, were assigned a value of 0.
+
 The GM-tECA and percentage of  anticodon:codon
 base pairing values were obtained using the python script available in https://github.com/trypchromics/trnaExpCodAdapt.
 First, the sapply function in R 4.3.1 was used to map each codon from
@@ -44,5 +60,3 @@ assigned a value of 0. Subsequently, the arithmetic mean of the codon values
 for each CDS was calculated using the arithm_avg_codons function in R, rather
 than the geometric mean. These arithmetic mean values represent the percentage
 of the target pairing mode for each sequence.
-
-<img src="./mediaAritmetica.png" alt="Arithmetic average formula." height="150"/>
