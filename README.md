@@ -37,7 +37,7 @@ To execute the scripts, run GM-tECA.bash and GM-tECA.R from directory geometricM
 
 To calculate the **percentage of target anticodon:codon pairing modes**, we employ the following formula: 
 
-<img src="./mediaAritmetica.png" alt="Arithmetic average formula." height="150"/>
+<img src="./images/mediaAritmetica.png" alt="Arithmetic average formula." height="150"/>
 
 where:
 * **n:** Total number of codons in the CDS.
